@@ -1,0 +1,9 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "My minimalistic blog",
+  "dependencies": {
+    "mapbox": "^1.0.0-beta5",
+    "mime": "~1.2.7"
+  }
+}
