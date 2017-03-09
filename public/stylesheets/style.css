@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #660066 1%, #ff99cc 100%);
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: white;
+
 }
 
 h1{
@@ -15,63 +15,52 @@ h1{
 }
 
 #map { 
-  position:absolute; 
+  position: absolute; 
   top:0;
   bottom:0; 
-  width:100%; }
- 
-.nav ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+  width:100%; 
 }
-.nav li {
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
+
+#topbar {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left:10px;
 }
- 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
+#dropdown{
+  position: absolute;
+  top: 10px;
+  left:90%;
+
 }
- 
-.nav a:hover {
-  background-color: #005f5f;
+
+.map-overlay {
+  font:bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  position: absolute;
+  width: 10%;
+  bottom: 20px;
+  left: 0;
+  padding: 10px;
 }
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+
+.map-overlay .map-overlay-inner {
+    background-color: #fff;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.20);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
- 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
- 
-  /* Option 1 - Display Inline */
-  .nav li {
+
+.map-overlay label {
+    display: block;
+    margin: 0 0 10px;
+}
+
+.map-overlay input {
+    background-color: transparent;
     display: inline-block;
-    margin-right: -4px;
-  }
- 
-  /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
+    width: 100%;
+    position: relative;
+    margin: 0;
+    cursor: ew-resize;
+}
